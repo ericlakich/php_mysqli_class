@@ -70,9 +70,9 @@ class mysqli_db {
 	public function open_mysqli_db() {
 		
 		$this->connection = new mysqli($this->database_host,
-										$this->database_user,
-										$this->database_pass,
-										$this->database_name) or 
+									   $this->database_user,
+									   $this->database_pass,
+									   $this->database_name) or 
   		die("mysqli Connection Error: " . mysqli_error() );
 	}
 	
